@@ -1,0 +1,49 @@
+header
+	min-height: 335px
+	margin: 0 0 25px
+
+	background:
+		image: url('../../images/slide-index-3.jpg')
+		position: top center
+		repeat: no-repeat
+		attachment: fixed
+		size: cover
+
+.contato
+
+	form
+
+		+clearfix
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+		.cols
+			+make-row
+		.col
+			+make-sm-column(6)
+
+		input,
+		select,
+		textarea
+			width: 100%
+			border: 2px solid $marrom-light
+			padding: 7px
+			text-transform: uppercase
+			+transition(.3s)
+
+			&:hover
+				border-color: $marrom-medium
+
+			&:focus
+				border-color: $marrom-dark
+
+		select
+			height: 37px
+
+		button
+			background-color: transparent
+			display: table
+			margin: 0 auto
+
+		.bg-success,
+		.bg-danger
+			padding: 7px
